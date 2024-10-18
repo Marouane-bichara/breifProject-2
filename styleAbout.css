@@ -1,0 +1,364 @@
+
+*
+{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header
+{
+    width: 100%;
+    height: 5em;
+    background-color: #66666680;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+}
+
+
+
+#menu-icon
+{
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo
+{
+    color: white;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.AllList
+{
+    display: flex;
+    list-style: none;
+}
+
+.AllList a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.AllList a:hover
+{
+    color: #0288D1;
+}
+
+
+
+/* about-us */
+
+.About-us
+{
+    background-image: url(images/lol.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    text-align: center;
+}
+
+.textContainer h1
+{
+    color: white;
+}
+
+.container-cards
+{
+    min-height: 70vh;
+    width: 100%;
+    min-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.allcards
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.textContaiiner
+{
+    min-height: 100px;
+
+}
+.textContaiiner p
+{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 6px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.boxcontainer
+{
+
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.boxcontainer
+{  
+    background-color: rgba(233, 233, 233, 0.74);
+    min-width: 260px;
+    height: 420px;
+    border-radius: 10px;
+    transition: 0.4s;
+
+}
+
+.boxcontainer:hover
+{
+    transform: scale(1.1);
+}
+
+.image-container
+{
+    height: 300;
+
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-container img
+{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+
+
+
+.infosAbout
+{
+
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.infosAbout p 
+{
+    padding: 10px;
+}
+
+
+
+.button
+{
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #0289d185;
+    border: 1px solid white;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+
+.button:hover
+{
+    background-color: #0288D1;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+
+    background-color:#0288D1 ;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1250px)
+{
+    .AllList
+    {
+        display: none;
+    }
+
+    #menu-icon
+    {
+        display: block;
+    }
+
+    .AllList
+    {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 55vh;
+        width: 100%;
+        background-color: #66666680;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        padding: 50px 20px;
+        transition: 0.4s;
+    }
+
+    .AllList a
+    {
+        margin-left: 0;
+        margin: 30px 0;
+        display: block;
+    }
+    .AllList.open
+    {
+        right: 0;
+    }
+}

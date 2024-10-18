@@ -1,0 +1,297 @@
+
+*
+{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header
+{
+    width: 100%;
+    height: 5em;
+    background-color: #66666680;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+}
+
+
+
+#menu-icon
+{
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo
+{
+    color: white;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.AllList
+{
+    display: flex;
+    list-style: none;
+}
+
+.AllList a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    margin: 20px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.AllList a:hover
+{
+    color: #0288D1;
+}
+
+
+
+.Gallery
+{
+    background-image: url(images/lol.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-cards
+{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    border-radius: 10px;
+    background-color: #0289d154;
+}
+
+.textContainer
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.textContainer h1
+{
+    text-align: center;
+    color: #ebebeb;
+
+}
+
+.card
+{
+    
+    background-color: #e9e9e9bd;
+    min-width: 280px;
+    height: 420px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+.container-cards
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card img
+{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.textCard
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.button-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-container button
+{
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #0289d185;
+    border: 1px solid white;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+
+.button-container button:hover
+{
+    background-color: #0288D1;
+    transform: scale(1.1);
+}
+
+
+
+.textCard p
+{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+
+    background-color:#0288D1 ;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1250px)
+{
+    .AllList
+    {
+        display: none;
+    }
+
+    #menu-icon
+    {
+        display: block;
+    }
+
+    .AllList
+    {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 55vh;
+        width: 100%;
+        background-color: #66666680;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        padding: 50px 20px;
+        transition: 0.4s;
+    }
+
+    .AllList a
+    {
+        margin-left: 0;
+        margin: 30px 0;
+        display: block;
+    }
+    .AllList.open
+    {
+        right: 0;
+    }
+}
